@@ -1,0 +1,24 @@
+.ImageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.singleImage {
+  max-width: 420px;
+  min-width: 300px;
+  /* margin: 1.15rem; */
+}
+.boatOffer {
+  text-align: center;
+}
+/* .img {
+  width: 200px;
+  height: 200px;
+} */
+
+.boatName {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+}

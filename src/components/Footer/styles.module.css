@@ -1,0 +1,14 @@
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: rgb(11, 11, 168);
+  margin-top: 80px;
+  /* padding: 10px; */
+}
+.footerp {
+  margin-top: 25px;
+}
+.logo2 {
+  min-width: 75px;
+}

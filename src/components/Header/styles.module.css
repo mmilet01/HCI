@@ -1,0 +1,39 @@
+header {
+  background: whitesmoke;
+}
+.SetSail {
+  display: flex;
+  flex: 1;
+}
+.links {
+  padding: 10px;
+  text-decoration: none;
+  color: darkblue;
+  text-transform: uppercase;
+}
+.logo {
+  min-width: 75px;
+  min-height: 75px;
+}
+.links:hover {
+  text-decoration: underline;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  /* flex: 1; */
+  list-style: none;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  color: darkblue;
+  justify-content: flex-start;
+  text-decoration: none;
+  border: 1px darkblue;
+  background-color: whitesmoke;
+  margin: 0px 5% 0px 5%;
+}
