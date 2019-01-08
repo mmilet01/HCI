@@ -16,7 +16,7 @@ export default ({ data }) => (
 
 export const query = graphql`
   query TeamsQuery {
-    allMarkdownRemark(filter: { frontmatter: { team: { eq: "1" } } }) {
+    allMarkdownRemark(filter: { frontmatter: { boat: { eq: "1" } } }) {
       edges {
         node {
           frontmatter {

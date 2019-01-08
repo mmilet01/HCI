@@ -10,6 +10,7 @@ export default ({ data }) => {
         <h2>{type}</h2>
         <p>{name}</p>
         <p>{excerpt}</p>
+        <p>Path : {path}</p>
       </section>
     )
   })
