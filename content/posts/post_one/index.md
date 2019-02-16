@@ -1,5 +1,6 @@
 ---
 date: 'Danas'
+name: 'John Doe'
 title: 'My 1st post'
 path: /post-one
 ---

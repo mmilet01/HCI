@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './styles.module.css'
+import { Link } from 'gatsby'
+
 
 export default ({ data }) => {
   const boatList = data.allMarkdownRemark.edges.map(boat => {
@@ -11,6 +13,11 @@ export default ({ data }) => {
         <p>{name}</p>
         <p>{excerpt}</p>
         <p>Path : {path}</p>
+        <Link to={path}>
+                <button type="button">
+                  Read More
+                </button>
+        </Link>
       </section>
     )
   })

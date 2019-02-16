@@ -34,7 +34,7 @@ export default () => {
   const sliderConfig = {
     dots: true,
     infinite: true,
-    speed: 750,
+    speed: 800,
     slidesToScroll: 1,
     autoplay: true,
   }

@@ -12,20 +12,33 @@ export default () => (
     <h1 className={styles.boatOffer}>Boat Offer</h1>
 
     <div className={styles.ImageContainer}>
+
       <div className={styles.singleImage}>
-        <p className={styles.boatName}>Monohull</p>
+    
+      <Link to="monohullpage">
+      <p className={styles.boatName}>Monohull</p>
         <Image1 />
+      </Link>
+        
       </div>
+
       <div className={styles.singleImage}>
-        <p className={styles.boatName}>Catamaran</p>
+
+      <Link to="/catamaranpage">
+      <p className={styles.boatName}>Catamaran</p>
 
         <Image2 />
+      </Link>
+        
       </div>
+
       <div className={styles.singleImage}>
+
         <Link to="/motorboatpage">
           <p className={styles.boatName}>Motorboat</p>
           <Image3 />
         </Link>
+
       </div>
     </div>
   </div>

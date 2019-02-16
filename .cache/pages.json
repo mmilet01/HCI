@@ -1,0 +1,188 @@
+[
+    {
+        "componentChunkName": "component---src-pages-index-js",
+        "jsonName": "index",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-404-js",
+        "jsonName": "404-html-516",
+        "path": "/404.html"
+    },
+    {
+        "componentChunkName": "component---src-pages-404-js",
+        "jsonName": "404-22d",
+        "path": "/404/"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "bali-9d7",
+        "path": "/Bali"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "first-7f1",
+        "path": "/First"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "keisha-d3d",
+        "path": "/Keisha"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "kreso-7da",
+        "path": "/Kreso"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "larissa-de3",
+        "path": "/Larissa"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "lexi-0c3",
+        "path": "/Lexi"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "slow-1ef",
+        "path": "/Slow"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "still-motor-boat-360",
+        "path": "/StillMotorBoat"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "ver-y-fast-b91",
+        "path": "/VerYFast"
+    },
+    {
+        "componentChunkName": "component---src-pages-about-js",
+        "jsonName": "about-f34",
+        "path": "/about/"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "alisa-afa",
+        "path": "/alisa"
+    },
+    {
+        "componentChunkName": "component---src-pages-blog-js",
+        "jsonName": "blog-f7a",
+        "path": "/blog/"
+    },
+    {
+        "componentChunkName": "component---src-pages-boats-js",
+        "jsonName": "boats-e12",
+        "path": "/boats/"
+    },
+    {
+        "componentChunkName": "component---src-pages-catamaranpage-js",
+        "jsonName": "catamaranpage-3ab",
+        "path": "/catamaranpage/"
+    },
+    {
+        "componentChunkName": "component---src-pages-crew-js",
+        "jsonName": "crew-ecd",
+        "path": "/crew/"
+    },
+    {
+        "componentChunkName": "component---cache-dev-404-page-js",
+        "jsonName": "dev-404-page-5f9",
+        "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "donnina-0c9",
+        "path": "/donnina"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "elisa-dcc",
+        "path": "/elisa"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "emmi-fb6",
+        "path": "/emmi"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "fortune-cbd",
+        "path": "/fortune"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "levas-e82",
+        "path": "/levas"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "monohulling-371",
+        "path": "/monohulling"
+    },
+    {
+        "componentChunkName": "component---src-pages-monohullpage-js",
+        "jsonName": "monohullpage-cdf",
+        "path": "/monohullpage/"
+    },
+    {
+        "componentChunkName": "component---src-pages-motorboatpage-js",
+        "jsonName": "motorboatpage-828",
+        "path": "/motorboatpage/"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "nelli-bf0",
+        "path": "/nelli"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "nelly-3da",
+        "path": "/nelly"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "poppy-d46",
+        "path": "/poppy"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "post-one-18e",
+        "path": "/post-one"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "post-two-2a5",
+        "path": "/post-two"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "sharkoid-807",
+        "path": "/sharkoid"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "sivir-cc1",
+        "path": "/sivir"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "syndra-5b0",
+        "path": "/syndra"
+    },
+    {
+        "componentChunkName": "component---src-templates-single-boat-js",
+        "jsonName": "tanya-76a",
+        "path": "/tanya"
+    },
+    {
+        "componentChunkName": "component---src-pages-account-js",
+        "jsonName": "account-530",
+        "path": "/account/",
+        "matchPath": "/account/*"
+    }
+]

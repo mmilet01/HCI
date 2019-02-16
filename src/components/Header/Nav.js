@@ -19,7 +19,7 @@ export default () => (
     <Link className={styles.links} to="/blog">
       Blog
     </Link>
-    <Link className={styles.links} to="/account">
+    <Link className={styles.links} to="/account/profile">
       Account
     </Link>
   </div>

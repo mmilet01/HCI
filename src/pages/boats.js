@@ -8,6 +8,7 @@ import styles from '../styles/pages/naslovna.module.css'
 export default ({ data }) => (
   <Layout>
     <BoatOffer />
+    <h1>Top choices</h1>
     <div className={styles.boatQuery}>
       <Boats data={data} />
     </div>
@@ -16,7 +17,7 @@ export default ({ data }) => (
 
 export const query = graphql`
   query TeamsQuery {
-    allMarkdownRemark(filter: { frontmatter: { boat: { eq: "1" } } }) {
+    allMarkdownRemark(filter: { frontmatter: { topChoice: { eq: "yes" } } }) {
       edges {
         node {
           frontmatter {

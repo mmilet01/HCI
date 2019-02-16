@@ -46,6 +46,14 @@ exports.createPages = ({ actions, graphql }) => {
   })
 }
 
+
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions
+  if (page.path.match(/^\/account/)) {
+    page.matchPath = "/account/*"
+    createPage(page)
+  }
+}
 /**
  * Implement Gatsby's Node APIs in this file.
  *

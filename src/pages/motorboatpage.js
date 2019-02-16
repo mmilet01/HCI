@@ -1,7 +1,11 @@
 import React from 'react'
 import Layout from '../components/layout'
+import SelectiveBoats from '../components/SelectiveBoats'
+import { graphql } from 'gatsby'
+import styles from '../styles/pages/naslovna.module.css'
 
-const MotorboatPage = () => (
+
+const MotorboatPage = ({data}) => (
   <Layout>
     <h1>
       You choosed to go on the vacation with a motorboat, Excellent choice !
@@ -12,7 +16,28 @@ const MotorboatPage = () => (
     </h4>
     <p>POPULAR DESTINATIONS -> Neki mini slideshow opet</p>
     <p>Filter za odabrat destinaciju</p>
+    <div className={styles.boatQuery}>
+    <SelectiveBoats data={data}></SelectiveBoats>
+    </div>
   </Layout>
 )
 
 export default MotorboatPage
+
+
+export const query = graphql`
+  query MotorboatQuery {
+    allMarkdownRemark(filter: { frontmatter: { type: { eq: "Motorboat" } } }) {
+      edges {
+        node {
+          frontmatter {
+            type
+            name
+            path
+          }
+          excerpt(pruneLength: 300)
+        }
+      }
+    }
+  }
+`
