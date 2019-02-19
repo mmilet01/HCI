@@ -6,8 +6,8 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <h1>Blog with the title {post.frontmatter.title}</h1>
-      <h4>This is the thing that should be written on every post</h4>
+      <h1>{post.frontmatter.title}</h1>
+      <p>Posted by {post.frontmatter.name} on {post.frontmatter.date}</p>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </Layout>
   )
@@ -21,6 +21,7 @@ export const postQurty = graphql`
         date
         title
         path
+        name
       }
     }
   }
