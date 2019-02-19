@@ -56,8 +56,8 @@ export default () => {
 
       <div>
         <BoatOffer />
-        <CrewOffer />
-      </div>
+{/*         <CrewOffer />
+ */}      </div>
     </Layout>
   )
 }

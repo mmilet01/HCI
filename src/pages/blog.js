@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 
 const BlogPage = () => (
   <Layout>
-    <h1>Top destinations by users</h1>
+    <h1>Top destinations and recommendations by users</h1>
     <BlogPosts />
   </Layout>
 )
