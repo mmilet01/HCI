@@ -7,15 +7,9 @@ import styles from '../styles/pages/naslovna.module.css'
 
 const CatamaranPage = ({data}) => (
   <Layout>
-    <h1>
-      You choosed to go on the vacation with a Catamaran, Excellent choice !
+    <h1 className={styles.fleet}>
+      Catamaran fleet
     </h1>
-    <h4>
-      Select the destination and choose from the available boats the one that
-      fits you the most
-    </h4>
-    <p>POPULAR DESTINATIONS -> Neki mini slideshow opet</p>
-    <p>Filter za odabrat destinaciju</p>
     <div className={styles.boatQuery}>
     <SelectiveBoats data={data}></SelectiveBoats>
     </div>
@@ -34,6 +28,9 @@ export const query = graphql`
             type
             name
             path
+            image{
+              publicURL
+            }
           }
           excerpt(pruneLength: 300)
         }

@@ -23,5 +23,18 @@
 .boatQuery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.figure{
+  max-width: 900px;
+}
+.fleet{
+  display: flex;
+  justify-content: center;
+}
+.allBoats{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }

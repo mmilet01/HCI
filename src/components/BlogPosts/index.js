@@ -22,12 +22,15 @@ class CityList extends Component {
           <div key={city.node.id} className={styles.post}>
             <h1 className={styles.title}>{city.node.frontmatter.title}</h1>
             <h4>{city.node.frontmatter.date}</h4>
-            <p>{city.node.excerpt}</p>
-            <img
-              src={city.node.frontmatter.image.publicURL}
-              className={styles.postImage}
-              alt="Destination"
-            />
+            <div className={styles.postContainer}>
+              <p>{city.node.excerpt}</p>
+              <img
+                src={city.node.frontmatter.image.publicURL}
+                className={styles.postImage}
+                alt="Destination"
+              />
+            </div>
+            
             <div className={styles.divbutton}>
               <Link className={styles.links} to={city.node.frontmatter.path}>
                 <button type="button" className={styles.button}>
@@ -46,7 +49,7 @@ class CityList extends Component {
           onChange={e => this.setState({ search: e.target.value })}
           placeholder="Search"
         />
-        <div>{cityList}</div>
+        <div className={styles.cityList}>{cityList}</div>
       </div>
     );
   }

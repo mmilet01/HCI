@@ -1,0 +1,77 @@
+:root {
+    --color-primary: #494949;
+    --color-grey: #eeeeee;
+    --color-dark-grey: #776666;
+    --color-gold: #e67700;
+    --color-gatsby: rgb(102, 51, 153);
+    --color-gatsby-light: rgb(233, 228, 238);
+    --color-dark: #20232a;
+  
+    --header-height: 3.25rem;
+    --header-padding: 5px;
+  
+    --z-index-menu: 1000;
+    --z-index-overlay: 999;
+  }
+  .allBoats{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  html {
+    box-sizing: border-box;
+    font-family: "Spectral", -apple-system, "BlinkMacSystemFont", "Segoe UI",
+      "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+  
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  @media only screen and (max-width: 450px) {
+    body.open {
+      overflow: hidden;
+    }
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: var(--color-gatsby, orange);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    border-bottom: 3px solid var(--color-gatsby, orange);
+  }
+  
+  .figure {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .figure__caption {
+    text-align: center;
+    color: var(--color-primary, #000);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-grey, #000);
+  }
+  

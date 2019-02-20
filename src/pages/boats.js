@@ -8,10 +8,13 @@ import styles from '../styles/pages/naslovna.module.css'
 export default ({ data }) => (
   <Layout>
     <BoatOffer />
-    <h1>Top choices</h1>
+  {/*   <br/>
+    <br/>
+    <h1>Top choices selected by users</h1>
+    <br/>
     <div className={styles.boatQuery}>
       <Boats data={data} />
-    </div>
+    </div> */}
   </Layout>
 )
 
@@ -24,6 +27,9 @@ export const query = graphql`
             type
             name
             path
+            image{
+              publicURL
+            }
           }
           excerpt(pruneLength: 300)
         }

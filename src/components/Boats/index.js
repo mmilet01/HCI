@@ -10,6 +10,8 @@ export default ({ data }) => {
     return (
       <section key={id} className={styles.boat}>
         <h2>{type}</h2>
+        <img src={boat.node.frontmatter.image.publicURL}
+        className={styles.boatImg}/>
         <p>{name}</p>
         <p>{excerpt}</p>
         <p>Path : {path}</p>

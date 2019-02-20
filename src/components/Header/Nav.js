@@ -7,7 +7,7 @@ export default () => (
     <Link className={styles.links} to="/">
       Home
     </Link>
-    <Link className={styles.links} to="/about">
+{/*     <Link className={styles.links} to="/about">
       About
     </Link>
     <Link className={styles.links} to="/boats">
@@ -15,9 +15,9 @@ export default () => (
     </Link>
     <Link className={styles.links} to="/crew">
       Crew
-    </Link>
+    </Link> */}
     <Link className={styles.links} to="/blog">
-      Blog
+      Destinations
     </Link>
     <Link className={styles.links} to="/account/profile">
       Account
