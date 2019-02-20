@@ -1,11 +1,11 @@
 ---
-type: 'Motorboat'
-name: 'Tanya'
+type: "Motorboat"
+name: "Tanya"
 path: /tanya
-boat: '1'
-topChoice: 'yes'
-image: './image/5jpg'
+boat: "1"
+topChoice: "yes"
+image: "./image/9.jpg"
 ---
 
 Motorboat - one of the fastest
-<img src="./image/5.jpg" alt="Title"/>
+<img src="./image/9.jpg" alt="Title"/>

@@ -22,3 +22,8 @@
   display: inline-block;
   font-size: 16px;
 }
+
+.postImage {
+  width: auto;
+  height: 200px;
+}

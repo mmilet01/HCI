@@ -1,50 +1,55 @@
-import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import React, { Component } from "react";
 import styles from "./styles.module.css";
 import { Link } from "gatsby";
 
-export default () => (
-  <StaticQuery
-    query={graphql`
-      query BlogQuery {
-        allMarkdownRemark(filter: { frontmatter: { title: { ne: "" } } }) {
-          edges {
-            node {
-              id
-              frontmatter {
-                title
-                path
-                date
-                image
-              }
-              excerpt(pruneLength: 300)
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
-      <div className={styles.container}>
-        {data.allMarkdownRemark.edges.map(posts => (
-          <div key={posts.node.id} className={styles.post}>
-            <h1 className={styles.title}>{posts.node.frontmatter.title}</h1>
-            <h4>{posts.node.frontmatter.date}</h4>
-            <p>{posts.node.excerpt}</p>
+class CityList extends Component {
+  state = {
+    search: ""
+  };
+
+  render() {
+    var { cities } = this.props;
+    const { search } = this.state;
+
+    const cityList = cities
+      .filter(city => {
+        return city.node.frontmatter.title
+          .toUpperCase()
+          .includes(search.toUpperCase());
+      })
+      .map(city => {
+        return (
+          <div key={city.node.id} className={styles.post}>
+            <h1 className={styles.title}>{city.node.frontmatter.title}</h1>
+            <h4>{city.node.frontmatter.date}</h4>
+            <p>{city.node.excerpt}</p>
             <img
-              src={posts.node.frontmatter.image}
+              src={city.node.frontmatter.image.publicURL}
               className={styles.postImage}
               alt="Destination"
             />
             <div className={styles.divbutton}>
-              <Link className={styles.links} to={posts.node.frontmatter.path}>
+              <Link className={styles.links} to={city.node.frontmatter.path}>
                 <button type="button" className={styles.button}>
                   Read More
                 </button>
               </Link>
             </div>
           </div>
-        ))}
+        );
+      });
+    return (
+      <div>
+        <input
+          type="search"
+          value={this.state.search}
+          onChange={e => this.setState({ search: e.target.value })}
+          placeholder="Search"
+        />
+        <div>{cityList}</div>
       </div>
-    )}
-  />
-);
+    );
+  }
+}
+
+export default CityList;
