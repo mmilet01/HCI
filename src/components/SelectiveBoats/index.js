@@ -16,7 +16,7 @@ export default ({ data }) => {
     } = boat.node.frontmatter;
     return (
       <section key={id} className={styles.boat}>
-        <h2>
+        <h2 className={styles.boatTitle}>
           {type} - {name}
         </h2>
         <div className={styles.boatCard}>

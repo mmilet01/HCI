@@ -1,6 +1,6 @@
 ---
 type: "Catamaran"
-name: "Fortune"
+name: "Forry"
 path: /fortune
 boat: "1"
 topChoice: "no"

@@ -1,6 +1,6 @@
 ---
 type: "Monohull"
-name: "Donnina"
+name: "Donna"
 path: /donnina
 boat: "1"
 topChoice: "yes"

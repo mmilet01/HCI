@@ -7,6 +7,7 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  cursor: pointer;
 }
 .singleBoat {
   display: flex;
@@ -20,6 +21,7 @@
 .title {
   display: flex;
   justify-content: center;
+  color: darkblue;
 }
 
 .postTitle {
@@ -47,6 +49,7 @@
   display: inline-block;
   font-size: 16px;
   margin-top: 5%;
+  cursor: pointer;
 }
 .backButton {
   margin-top: 15px;

@@ -1,6 +1,6 @@
 ---
 type: "Monohull"
-name: "Sharkoid"
+name: "Shara"
 path: /sharkoid
 boat: "1"
 topChoice: "no"

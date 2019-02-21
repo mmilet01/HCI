@@ -1,6 +1,6 @@
 ---
 type: "Monohull"
-name: "Syndra"
+name: "Syra"
 path: /syndra
 boat: "1"
 topChoice: "no"

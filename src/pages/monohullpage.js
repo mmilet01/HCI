@@ -3,10 +3,12 @@ import Layout from "../components/Layout";
 import SelectiveBoats from "../components/SelectiveBoats";
 import { graphql } from "gatsby";
 import styles from "../styles/pages/naslovna.module.css";
+import BoatFilter2 from "../components/BoatFilter2";
 
 const MonohullPage = ({ data }) => (
   <Layout>
     <h1 className={styles.fleet}>Monohull fleet</h1>
+    <BoatFilter2 />
     <div className={styles.boatQuery}>
       <SelectiveBoats data={data} />
     </div>

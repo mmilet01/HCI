@@ -1,0 +1,11 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.option {
+  margin: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}

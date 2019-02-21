@@ -5,12 +5,14 @@ import Boats from "../components/Boats";
 import { graphql } from "gatsby";
 import styles from "../styles/pages/naslovna.module.css";
 import SelectiveBoats from "../components/SelectiveBoats";
+import BoatFilter from "../components/BoatFilter";
 
 export default ({ data }) => (
   <Layout>
     {/*     <BoatOffer />
      */}{" "}
     <h1 className={styles.fleet}>OUR ENTIRE FLEET</h1>
+    <BoatFilter />
     <div className={styles.boatQuery}>
       <SelectiveBoats data={data} />
     </div>

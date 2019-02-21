@@ -3,10 +3,12 @@ import Layout from "../components/Layout";
 import SelectiveBoats from "../components/SelectiveBoats";
 import { graphql } from "gatsby";
 import styles from "../styles/pages/naslovna.module.css";
+import BoatFilter2 from "../components/BoatFilter2";
 
 const MotorboatPage = ({ data }) => (
   <Layout>
     <h1 className={styles.fleet}>Motorboat fleet</h1>
+    <BoatFilter2 />
     {/* <h4>
       Select the destination and choose from the available boats the one that
       fits you the most

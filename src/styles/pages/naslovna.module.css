@@ -38,7 +38,8 @@
 .fleet {
   display: flex;
   justify-content: center;
-  color: blue;
+  color: black;
+  font-size: 35px;
 }
 .allBoats {
   border: 5px solid red;
