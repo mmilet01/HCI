@@ -3,10 +3,12 @@
   padding: 10px;
 }
 .post {
-  background-color: white;
-  margin:auto;
-  padding:5%;
-  
+  background-color: whitesmoke;
+  margin: 1%;
+  padding: 5%;
+  /*   padding: 2%;
+ */
+  border: 1px solid lightblue;
 }
 .title {
   color: rgb(0, 0, 247);
@@ -33,9 +35,46 @@
 /* .postContainer{
   display:flex;
 } */
-.cityList{
-  display:grid;
+.cityList {
+  display: grid;
   grid-template-columns: 1fr 1fr;
-  padding:8%;
-  margin:2%;
+  padding: 8%;
+  margin: 2%;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.searchInput:focus {
+  outline: none;
+  background: lightblue;
+}
+.abovePosts {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 20px;
+  /*   border-bottom: 1px solid lightblue;
+ */
+}
+.blogTitle {
+  font-size: 30px;
+}
+
+.searchInput {
+  border: none;
+  text-decoration: underline;
+  margin-top: 20px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.8rem;
+  overflow: hidden;
+  border-width: 0;
+  color: var(--color-gatsby);
+  font-weight: 500;
+  font-size: 16px;
+}
+.label {
+  position: relative;
+  margin-left: auto;
 }

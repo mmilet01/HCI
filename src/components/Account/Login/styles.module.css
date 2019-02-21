@@ -1,26 +1,87 @@
 .login-form {
-    margin-top: 233px;
-    text-align: center;
+  margin-top: 233px;
+  text-align: center;
 }
 
 .register-link {
-    color: white;
+  color: blue;
 }
 
 .error {
-    color: red;
-    font-weight: bold;
-    text-shadow: 1px 1px 4px black;
-    position: absolute;
-    top: 230px;
-    left: 0;
-    right: 0;
-    margin: auto;
+  color: red;
+  font-weight: bold;
+  /*   text-shadow: 1px 1px 4px black;
+ */
+  position: absolute;
+  top: 200px;
+
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-.error.open{
-    visibility: visible;
+.error.open {
+  visibility: visible;
 }
-.error.closed{
-    visibility: hidden;
+.error.closed {
+  visibility: hidden;
+}
+
+.form {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: none;
+  border: none;
+  width: 40%;
+  max-width: 600px;
+
+  font-size: 26px;
+  border-bottom: 2px solid blue;
+  color: blue;
+  padding: 5px;
+  padding-left: 5%;
+  margin-bottom: 20px;
+}
+
+.form-input::placeholder {
+  color: blue;
+  font-weight: 200;
+}
+
+.form-button {
+  cursor: pointer;
+  font-size: 20px;
+  background: none;
+  color: blue;
+  border: 3px solid blue;
+  border-radius: 20px;
+  padding: 15px 55px;
+}
+
+.form__button:hover {
+  cursor: pointer;
+}
+
+.form__button:hover,
+.form__button:active,
+.form__button:focus {
+  background-color: color(rebeccapurple lightness(-20%));
+}
+
+.login-form {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.register-link {
+  text-align: center;
+  color: blue;
 }

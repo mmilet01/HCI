@@ -1,14 +1,20 @@
-import React from 'react'
-import Layout from '../components/layout'
-import BoatOffer from '../components/BoatOffer'
-import Boats from '../components/Boats'
-import { graphql } from 'gatsby'
-import styles from '../styles/pages/naslovna.module.css'
+import React from "react";
+import Layout from "../components/Layout";
+import BoatOffer from "../components/BoatOffer";
+import Boats from "../components/Boats";
+import { graphql } from "gatsby";
+import styles from "../styles/pages/naslovna.module.css";
+import SelectiveBoats from "../components/SelectiveBoats";
 
 export default ({ data }) => (
   <Layout>
-    <BoatOffer />
-  {/*   <br/>
+    {/*     <BoatOffer />
+     */}{" "}
+    <h1 className={styles.fleet}>OUR ENTIRE FLEET</h1>
+    <div className={styles.boatQuery}>
+      <SelectiveBoats data={data} />
+    </div>
+    {/*   <br/>
     <br/>
     <h1>Top choices selected by users</h1>
     <br/>
@@ -16,18 +22,21 @@ export default ({ data }) => (
       <Boats data={data} />
     </div> */}
   </Layout>
-)
+);
 
 export const query = graphql`
   query TeamsQuery {
-    allMarkdownRemark(filter: { frontmatter: { topChoice: { eq: "yes" } } }) {
+    allMarkdownRemark(filter: { frontmatter: { boat: { eq: "1" } } }) {
       edges {
         node {
           frontmatter {
             type
             name
             path
-            image{
+            capacity
+            price
+            yearOfProduction
+            image {
               publicURL
             }
           }
@@ -36,4 +45,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

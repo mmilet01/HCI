@@ -1,23 +1,19 @@
-import React from 'react'
-import Layout from '../components/layout'
-import SelectiveBoats from '../components/SelectiveBoats'
-import { graphql } from 'gatsby'
-import styles from '../styles/pages/naslovna.module.css'
+import React from "react";
+import Layout from "../components/Layout";
+import SelectiveBoats from "../components/SelectiveBoats";
+import { graphql } from "gatsby";
+import styles from "../styles/pages/naslovna.module.css";
 
-
-const MonohullPage = ({data}) => (
+const MonohullPage = ({ data }) => (
   <Layout>
-    <h1 className={styles.fleet}>
-      Monohull fleet
-    </h1>
+    <h1 className={styles.fleet}>Monohull fleet</h1>
     <div className={styles.boatQuery}>
-    <SelectiveBoats data={data}></SelectiveBoats>
+      <SelectiveBoats data={data} />
     </div>
   </Layout>
-)
+);
 
-export default MonohullPage
-
+export default MonohullPage;
 
 export const query = graphql`
   query MonohullQuery {
@@ -28,7 +24,10 @@ export const query = graphql`
             type
             name
             path
-            image{
+            capacity
+            price
+            yearOfProduction
+            image {
               publicURL
             }
           }
@@ -37,4 +36,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

@@ -5,13 +5,9 @@ path: /tanya
 boat: "1"
 topChoice: "yes"
 image: "./image/9.jpg"
-capacity: '8'
-airCond: 'no'
-price: '2000'
-yearOfProduction: '1998'
-cabins: '5'
+capacity: "6"
+airCond: "yes"
+price: "4500"
+yearOfProduction: "2015"
+cabins: "3"
 ---
-
-<figure class="figure">
-    <img src="./image/9.jpg" alt="Title"/>
-</figure>

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styles from "./styles.module.css";
 import { Link } from "gatsby";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 class CityList extends Component {
   state = {
@@ -30,7 +32,7 @@ class CityList extends Component {
                 alt="Destination"
               />
             </div>
-            
+
             <div className={styles.divbutton}>
               <Link className={styles.links} to={city.node.frontmatter.path}>
                 <button type="button" className={styles.button}>
@@ -43,12 +45,21 @@ class CityList extends Component {
       });
     return (
       <div>
-        <input
-          type="search"
-          value={this.state.search}
-          onChange={e => this.setState({ search: e.target.value })}
-          placeholder="Search"
-        />
+        <div className={styles.abovePosts}>
+          <h1 className={styles.blogTitle}>User reviews</h1>
+          <div className={styles.label}>
+            <FontAwesomeIcon className={styles.SearchIcon} icon={faSearch} />
+
+            <input
+              type="search"
+              value={this.state.search}
+              onChange={e => this.setState({ search: e.target.value })}
+              placeholder="Search destinations"
+              className={styles.searchInput}
+            />
+          </div>
+        </div>
+
         <div className={styles.cityList}>{cityList}</div>
       </div>
     );

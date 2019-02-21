@@ -1,23 +1,19 @@
-import React from 'react'
-import Layout from '../components/layout'
-import SelectiveBoats from '../components/SelectiveBoats'
-import { graphql } from 'gatsby'
-import styles from '../styles/pages/naslovna.module.css'
+import React from "react";
+import Layout from "../components/Layout";
+import SelectiveBoats from "../components/SelectiveBoats";
+import { graphql } from "gatsby";
+import styles from "../styles/pages/naslovna.module.css";
 
-
-const CatamaranPage = ({data}) => (
+const CatamaranPage = ({ data }) => (
   <Layout>
-    <h1 className={styles.fleet}>
-      Catamaran fleet
-    </h1>
+    <h1 className={styles.fleet}>Catamaran fleet</h1>
     <div className={styles.boatQuery}>
-    <SelectiveBoats data={data}></SelectiveBoats>
+      <SelectiveBoats data={data} />
     </div>
   </Layout>
-)
+);
 
-export default CatamaranPage
-
+export default CatamaranPage;
 
 export const query = graphql`
   query CatamaranQuery {
@@ -28,7 +24,10 @@ export const query = graphql`
             type
             name
             path
-            image{
+            capacity
+            price
+            yearOfProduction
+            image {
               publicURL
             }
           }
@@ -37,4 +36,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

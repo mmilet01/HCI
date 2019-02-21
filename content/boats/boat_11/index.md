@@ -5,11 +5,9 @@ path: /syndra
 boat: "1"
 topChoice: "no"
 image: "./image/11.jpg"
-capacity: '8'
-airCond: 'no'
-price: '2000'
-yearOfProduction: '1998'
-cabins: '5'
+capacity: "6"
+airCond: "no"
+price: "1500"
+yearOfProduction: "2002"
+cabins: "3"
 ---
-
-Monohull BOiiiiiis

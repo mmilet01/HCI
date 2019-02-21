@@ -5,11 +5,9 @@ path: /poppy
 boat: "1"
 topChoice: "no"
 image: "./image/12.jpg"
-capacity: '8'
-airCond: 'no'
-price: '2000'
-yearOfProduction: '1998'
-cabins: '5'
+capacity: "12"
+airCond: "no"
+price: "5600"
+yearOfProduction: "2008"
+cabins: "6"
 ---
-
-Monohull BOiiiiiis

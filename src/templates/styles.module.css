@@ -1,23 +1,70 @@
 .button {
-    background-color: darkblue;
-    color: white;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-  .singleBoat{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .details{
-    padding-left:5%;
-  }
-  .title{
-    display: flex;
-    justify-content: center;
-  }
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.singleBoat {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.details {
+  padding-left: 5%;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.postTitle {
+  color: blue;
+  text-align: center;
+}
+
+.mdContent {
+  margin-left: 13%;
+  margin-right: 13%;
+  padding: auto;
+}
+
+.postedBy {
+  color: blue;
+  text-align: end;
+}
+.button {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 5%;
+}
+.backButton {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.singleImage {
+  margin: 5%;
+  border: 2px solid lightblue;
+}
+.slider {
+  margin: 9%;
+}
+
+.mainBoatImage {
+  height: 400px;
+  width: auto;
+  max-width: 750px;
+  object-fit: cover;
+  margin-left: 9%;
+}

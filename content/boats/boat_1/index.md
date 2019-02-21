@@ -1,16 +1,13 @@
 ---
-type: 'Monohull'
-name: 'Larissa'
+type: "Monohull"
+name: "Larissa"
 path: /Larissa
-boat: '1'
-topChoice: 'yes'
+boat: "1"
+topChoice: "yes"
 image: "./image/1.jpg"
-capacity: '8'
-airCond: 'no'
-price: '2000'
-yearOfProduction: '1998'
-cabins: '5'
+capacity: "8"
+airCond: "no"
+price: "1500"
+yearOfProduction: "2001"
+cabins: "5"
 ---
-
-
-<img src="./image/1.jpg" alt="Title"/>
