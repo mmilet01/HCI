@@ -2,6 +2,7 @@
   margin-top: 50px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   color: blue;
   font-size: 25px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -55,4 +56,13 @@
   background-color: var(--color-light-blue, lightskyblue);
   border-radius: 20px;
   padding: 12px 40px;
+}
+@media only screen and (max-width: 850px){
+  .right {
+    width: 100%;
+    text-align: center;
+  }
+  .info{
+    width: 100%;
+  }
 }

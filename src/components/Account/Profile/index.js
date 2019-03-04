@@ -31,10 +31,10 @@ export default () => {
           <div className={styles.info}>
             <div className={styles.labels}>
               <p>username</p>
-              <p>first name</p>
-              <p>last name</p>
+              <p>name</p>
+              <p>surname</p>
               <p>email</p>
-              <p>date of birth</p>
+              <p>date</p>
               <p>job</p>
             </div>
             <div className={styles.data}>

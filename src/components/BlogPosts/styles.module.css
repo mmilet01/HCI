@@ -26,7 +26,6 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  cursor: pointer;
 }
 
 .postImage {
@@ -78,4 +77,16 @@
 .label {
   position: relative;
   margin-left: auto;
+}
+
+@media only screen and (max-width: 850px){
+  .cityList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8%;
+    margin: 2%;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
